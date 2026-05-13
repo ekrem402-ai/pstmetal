@@ -1,304 +1,266 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PST Metal | HVAC & Metal Fabrication</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PST Metal | HVAC & Metal Fabrication</title>
 
-<style>
+  <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-body{
-    font-family:Arial,sans-serif;
-    background:#07111d;
-    color:white;
-    line-height:1.6;
-}
+    body{
+      font-family:Arial,sans-serif;
+      background:#07111d;
+      color:white;
+      line-height:1.6;
+    }
 
-/* HEADER */
+    header{
+      width:100%;
+      background:#081523;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 8%;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
 
-header{
-    width:100%;
-    background:#081523;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    position:sticky;
-    top:0;
-    z-index:999;
-    border-bottom:1px solid rgba(255,255,255,0.08);
-}
+    .logo{
+      font-size:30px;
+      font-weight:bold;
+      letter-spacing:2px;
+    }
 
-.logo{
-    font-size:30px;
-    font-weight:bold;
-    letter-spacing:2px;
-}
+    .lang-buttons{
+      display:flex;
+      gap:10px;
+    }
 
-.lang-buttons{
-    display:flex;
-    gap:10px;
-}
+    .lang-buttons button{
+      background:white;
+      color:black;
+      border:none;
+      padding:10px 16px;
+      cursor:pointer;
+      border-radius:8px;
+      font-weight:bold;
+    }
 
-.lang-buttons button{
-    background:white;
-    color:black;
-    border:none;
-    padding:10px 16px;
-    cursor:pointer;
-    border-radius:8px;
-    font-weight:bold;
-    transition:0.3s;
-}
+    .hero{
+      width:100%;
+      min-height:85vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+      url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop");
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:80px 20px;
+    }
 
-.lang-buttons button:hover{
-    background:#c7dfff;
-}
+    .hero-content{
+      max-width:900px;
+    }
 
-/* HERO */
+    .hero h1{
+      font-size:56px;
+      margin-bottom:20px;
+    }
 
-.hero{
-    width:100%;
-    min-height:85vh;
-    background:
-    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
-    url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:80px 20px;
-}
+    .hero p{
+      font-size:22px;
+      color:#d4e6ff;
+    }
 
-.hero-content{
-    max-width:900px;
-}
+    section{
+      padding:80px 8%;
+    }
 
-.hero h1{
-    font-size:56px;
-    margin-bottom:20px;
-}
+    .section-title{
+      font-size:38px;
+      margin-bottom:25px;
+    }
 
-.hero p{
-    font-size:22px;
-    color:#d4e6ff;
-}
+    .section-text{
+      max-width:1000px;
+      color:#d0dceb;
+      font-size:18px;
+    }
 
-/* SECTION */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:40px;
+    }
 
-section{
-    padding:80px 8%;
-}
+    .card{
+      background:#0e1d2f;
+      padding:30px;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
 
-.section-title{
-    font-size:38px;
-    margin-bottom:25px;
-    color:white;
-}
+    .card h3{
+      margin-bottom:15px;
+      font-size:22px;
+    }
 
-.section-text{
-    max-width:1000px;
-    color:#d0dceb;
-    font-size:18px;
-}
+    .card p{
+      color:#bdd3ec;
+    }
 
-/* GRID */
+    /* TABLE */
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    margin-top:40px;
-}
+    .table-wrapper{
+      width:100%;
+      overflow-x:auto;
+      -webkit-overflow-scrolling:touch;
+      border-radius:20px;
+      margin-top:40px;
+    }
 
-.card{
-    background:#0e1d2f;
-    padding:30px;
-    border-radius:18px;
-    border:1px solid rgba(255,255,255,0.08);
-    transition:0.3s;
-}
+    table{
+      width:100%;
+      min-width:900px;
+      border-collapse:collapse;
+      background:#0b1727;
+      table-layout:fixed;
+    }
 
-.card:hover{
-    transform:translateY(-5px);
-    border-color:#4fa3ff;
-}
+    th,td{
+      padding:18px 16px;
+      text-align:left;
+      vertical-align:middle;
+      line-height:1.5;
+      white-space:normal;
+      overflow-wrap:break-word;
+    }
 
-.card h3{
-    margin-bottom:15px;
-    font-size:22px;
-}
+    th{
+      background:#102033;
+      color:white;
+      font-size:16px;
+    }
 
-.card p{
-    color:#bdd3ec;
-}
+    td{
+      color:#d6e7ff;
+      border-top:1px solid rgba(255,255,255,0.06);
+    }
 
-/* TABLE */
+    .contact-box{
+      background:#0e1d2f;
+      padding:40px;
+      border-radius:20px;
+      margin-top:35px;
+    }
 
-.table-wrapper{
-    width:100%;
-    overflow-x:auto;
-    border-radius:20px;
-    margin-top:40px;
-    border:1px solid rgba(255,255,255,0.08);
-}
+    .contact-box p{
+      margin-bottom:15px;
+      font-size:18px;
+    }
 
-table{
-    width:100%;
-    min-width:900px;
-    border-collapse:collapse;
-    background:#0b1727;
-    table-layout:fixed;
-}
+    .contact-box a{
+      color:#74b7ff;
+      text-decoration:none;
+      font-weight:bold;
+    }
 
-th,td{
-    padding:18px 16px;
-    text-align:left;
-    vertical-align:middle;
-    line-height:1.5;
-    white-space:normal;
-    overflow-wrap:break-word;
-}
+    footer{
+      background:#050d16;
+      padding:30px;
+      text-align:center;
+      color:#8ea4be;
+      border-top:1px solid rgba(255,255,255,0.06);
+    }
 
-th{
-    background:#102033;
-    color:white;
-    font-size:16px;
-}
+    .en{
+      display:none;
+    }
 
-td{
-    color:#d6e7ff;
-    border-top:1px solid rgba(255,255,255,0.06);
-}
+    /* MOBILE */
 
-/* CONTACT */
+    @media (max-width:768px){
 
-.contact-box{
-    background:#0e1d2f;
-    padding:40px;
-    border-radius:20px;
-    margin-top:35px;
-}
+      header{
+        flex-direction:column;
+        gap:12px;
+        padding:18px 20px;
+      }
 
-.contact-box p{
-    margin-bottom:15px;
-    font-size:18px;
-}
+      .logo{
+        font-size:24px;
+      }
 
-.contact-box a{
-    color:#74b7ff;
-    text-decoration:none;
-    font-weight:bold;
-}
+      .hero{
+        min-height:70vh;
+        padding:60px 20px;
+      }
 
-/* FOOTER */
+      .hero h1{
+        font-size:34px;
+      }
 
-footer{
-    background:#050d16;
-    padding:30px;
-    text-align:center;
-    color:#8ea4be;
-    border-top:1px solid rgba(255,255,255,0.06);
-}
+      .hero p{
+        font-size:18px;
+      }
 
-/* LANGUAGE */
+      section{
+        padding:50px 20px;
+      }
 
-.en{
-    display:none;
-}
+      .section-title{
+        font-size:30px;
+      }
 
-/* MOBILE */
+      .section-text{
+        font-size:16px;
+      }
 
-@media(max-width:768px){
+      .grid{
+        grid-template-columns:1fr;
+      }
 
-header{
-    flex-direction:column;
-    gap:15px;
-    padding:18px 20px;
-}
+      table{
+        min-width:850px;
+      }
 
-.logo{
-    font-size:24px;
-}
+      th,td{
+        font-size:14px;
+        padding:12px;
+      }
 
-.hero{
-    min-height:70vh;
-    padding:60px 20px;
-}
+      .contact-box{
+        padding:25px;
+      }
 
-.hero h1{
-    font-size:34px;
-}
+      .contact-box p{
+        font-size:16px;
+      }
 
-.hero p{
-    font-size:18px;
-}
+    }
 
-section{
-    padding:55px 20px;
-}
-
-.section-title{
-    font-size:30px;
-}
-
-.section-text{
-    font-size:16px;
-}
-
-.grid{
-    grid-template-columns:1fr;
-}
-
-.card{
-    padding:24px;
-}
-
-.table-wrapper{
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-}
-
-table{
-    min-width:850px;
-}
-
-th,td{
-    font-size:14px;
-    padding:14px;
-}
-
-.contact-box{
-    padding:25px;
-}
-
-.contact-box p{
-    font-size:16px;
-}
-
-}
-
-</style>
+  </style>
 </head>
 
 <body>
 
 <header>
 
-<div class="logo">PST METAL</div>
+  <div class="logo">PST METAL</div>
 
-<div class="lang-buttons">
-<button onclick="setLang('tr')">TR</button>
-<button onclick="setLang('en')">EN</button>
-</div>
+  <div class="lang-buttons">
+    <button onclick="setLang('tr')">TR</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
 
 </header>
 
@@ -306,23 +268,23 @@ th,td{
 
 <div class="hero">
 
-<div class="hero-content">
+  <div class="hero-content">
 
-<div class="tr">
-<h1>Metal İmalat ve HVAC Çözümleri</h1>
-<p>
-Isıtma, soğutma ve metal fabrikasyon sektörleri için profesyonel üretim ve ihracat çözümleri.
-</p>
-</div>
+    <div class="tr">
+      <h1>Metal İmalat ve HVAC Çözümleri</h1>
+      <p>
+        Isıtma, soğutma ve metal fabrikasyon sektörleri için profesyonel üretim ve ihracat çözümleri.
+      </p>
+    </div>
 
-<div class="en">
-<h1>Metal Fabrication & HVAC Solutions</h1>
-<p>
-Professional manufacturing and export solutions for heating, cooling and metal fabrication industries.
-</p>
-</div>
+    <div class="en">
+      <h1>Metal Fabrication & HVAC Solutions</h1>
+      <p>
+        Professional manufacturing and export solutions for heating, cooling and metal fabrication industries.
+      </p>
+    </div>
 
-</div>
+  </div>
 
 </div>
 
@@ -330,25 +292,25 @@ Professional manufacturing and export solutions for heating, cooling and metal f
 
 <section>
 
-<div class="tr">
-<h2 class="section-title">Hakkımızda</h2>
+  <div class="tr">
+    <h2 class="section-title">Hakkımızda</h2>
 
-<p class="section-text">
-PST Metal; metal işleme, sac şekillendirme, klima montaj ekipmanları,
-HVAC bağlantı parçaları ve özel proje üretimlerinde faaliyet göstermektedir.
-Kaliteli üretim, rekabetçi fiyatlandırma ve ihracata uygun paketleme çözümleri sunmaktadır.
-</p>
-</div>
+    <p class="section-text">
+      PST Metal; metal işleme, sac şekillendirme, klima montaj ekipmanları,
+      HVAC bağlantı parçaları ve özel proje üretimlerinde faaliyet göstermektedir.
+      Kaliteli üretim, rekabetçi fiyatlandırma ve ihracata uygun paketleme çözümleri sunmaktadır.
+    </p>
+  </div>
 
-<div class="en">
-<h2 class="section-title">About Us</h2>
+  <div class="en">
+    <h2 class="section-title">About Us</h2>
 
-<p class="section-text">
-PST Metal operates in metal processing, sheet metal forming,
-air conditioner mounting equipment, HVAC connection parts and custom project manufacturing.
-We provide quality production, competitive pricing and export-ready packaging solutions.
-</p>
-</div>
+    <p class="section-text">
+      PST Metal operates in metal processing, sheet metal forming,
+      air conditioner mounting equipment, HVAC connection parts and custom project manufacturing.
+      We provide quality production, competitive pricing and export-ready packaging solutions.
+    </p>
+  </div>
 
 </section>
 
@@ -356,37 +318,37 @@ We provide quality production, competitive pricing and export-ready packaging so
 
 <section>
 
-<div class="tr">
-<h2 class="section-title">Ürün ve Hizmetler</h2>
-</div>
+  <div class="tr">
+    <h2 class="section-title">Ürün ve Hizmetler</h2>
+  </div>
 
-<div class="en">
-<h2 class="section-title">Products & Services</h2>
-</div>
+  <div class="en">
+    <h2 class="section-title">Products & Services</h2>
+  </div>
 
-<div class="grid">
+  <div class="grid">
 
-<div class="card">
-<h3>HVAC</h3>
-<p>Klima dış ünite montaj ayakları ve bağlantı ekipmanları.</p>
-</div>
+    <div class="card">
+      <h3>HVAC</h3>
+      <p>Klima dış ünite montaj ayakları ve bağlantı ekipmanları.</p>
+    </div>
 
-<div class="card">
-<h3>Metal Fabrication</h3>
-<p>Sac metal işleme ve özel kaynaklı imalat çözümleri.</p>
-</div>
+    <div class="card">
+      <h3>Metal Fabrication</h3>
+      <p>Sac metal işleme ve özel kaynaklı imalat çözümleri.</p>
+    </div>
 
-<div class="card">
-<h3>Export Production</h3>
-<p>İhracata uygun seri üretim ve paketleme çözümleri.</p>
-</div>
+    <div class="card">
+      <h3>Export Production</h3>
+      <p>İhracata uygun seri üretim ve paketleme çözümleri.</p>
+    </div>
 
-<div class="card">
-<h3>Custom Projects</h3>
-<p>Projeye özel ölçü ve üretim seçenekleri.</p>
-</div>
+    <div class="card">
+      <h3>Custom Projects</h3>
+      <p>Projeye özel ölçü ve üretim seçenekleri.</p>
+    </div>
 
-</div>
+  </div>
 
 </section>
 
@@ -394,66 +356,66 @@ We provide quality production, competitive pricing and export-ready packaging so
 
 <section>
 
-<div class="tr">
-<h2 class="section-title">Teknik Ürün Tablosu</h2>
-</div>
+  <div class="tr">
+    <h2 class="section-title">Teknik Ürün Tablosu</h2>
+  </div>
 
-<div class="en">
-<h2 class="section-title">Technical Product Table</h2>
-</div>
+  <div class="en">
+    <h2 class="section-title">Technical Product Table</h2>
+  </div>
 
-<div class="table-wrapper">
+  <div class="table-wrapper">
 
-<table>
+    <table>
 
-<tr>
-<th>Product Type</th>
-<th>Sample Size</th>
-<th>ΔT50</th>
-<th>Water Content</th>
-<th>Connection</th>
-<th>Application</th>
-</tr>
+      <tr>
+        <th>Product Type</th>
+        <th>Sample Size</th>
+        <th>ΔT50</th>
+        <th>Water Content</th>
+        <th>Connection</th>
+        <th>Application</th>
+      </tr>
 
-<tr>
-<td>Vertical Aluminium Radiator</td>
-<td>1800 × 450 mm</td>
-<td>850–1200 W</td>
-<td>4–7 L</td>
-<td>Bottom / side</td>
-<td>Living room, hallway, projects</td>
-</tr>
+      <tr>
+        <td>Vertical Aluminium Radiator</td>
+        <td>1800 × 450 mm</td>
+        <td>850–1200 W</td>
+        <td>4–7 L</td>
+        <td>Bottom / side</td>
+        <td>Living room, hallway, projects</td>
+      </tr>
 
-<tr>
-<td>Horizontal Aluminium Radiator</td>
-<td>600 × 1000 mm</td>
-<td>700–1100 W</td>
-<td>5–8 L</td>
-<td>Side connection</td>
-<td>Residential & office</td>
-</tr>
+      <tr>
+        <td>Horizontal Aluminium Radiator</td>
+        <td>600 × 1000 mm</td>
+        <td>700–1100 W</td>
+        <td>5–8 L</td>
+        <td>Side connection</td>
+        <td>Residential & office</td>
+      </tr>
 
-<tr>
-<td>Aluminium Towel Warmer</td>
-<td>1200 × 500 mm</td>
-<td>450–750 W</td>
-<td>3–5 L</td>
-<td>Bottom connection</td>
-<td>Bathroom, hotel, spa</td>
-</tr>
+      <tr>
+        <td>Aluminium Towel Warmer</td>
+        <td>1200 × 500 mm</td>
+        <td>450–750 W</td>
+        <td>3–5 L</td>
+        <td>Bottom connection</td>
+        <td>Bathroom, hotel, spa</td>
+      </tr>
 
-<tr>
-<td>Electric Model</td>
-<td>1200 × 500 mm</td>
-<td>300–800 W</td>
-<td>Fluid / dry type</td>
-<td>Power supply</td>
-<td>Independent heating</td>
-</tr>
+      <tr>
+        <td>Electric Model</td>
+        <td>1200 × 500 mm</td>
+        <td>300–800 W</td>
+        <td>Fluid / dry type</td>
+        <td>Power supply</td>
+        <td>Independent heating</td>
+      </tr>
 
-</table>
+    </table>
 
-</div>
+  </div>
 
 </section>
 
@@ -461,66 +423,73 @@ We provide quality production, competitive pricing and export-ready packaging so
 
 <section>
 
-<div class="tr">
-<h2 class="section-title">İletişim</h2>
-</div>
+  <div class="tr">
+    <h2 class="section-title">İletişim</h2>
+  </div>
 
-<div class="en">
-<h2 class="section-title">Contact</h2>
-</div>
+  <div class="en">
+    <h2 class="section-title">Contact</h2>
+  </div>
 
-<div class="contact-box">
+  <div class="contact-box">
 
-<div class="tr">
-<p>Teklif ve iş birliği talepleriniz için bizimle iletişime geçebilirsiniz.</p>
-<p>
-E-Mail:
-<a href="mailto:sales@pstmetal.com.tr">
-sales@pstmetal.com.tr
-</a>
-</p>
+    <div class="tr">
 
-<p>
-WhatsApp:
-<a href="https://wa.me/905346634749">
-İletişime Geç
-</a>
-</p>
-</div>
+      <p>
+        Teklif ve iş birliği talepleriniz için bizimle iletişime geçebilirsiniz.
+      </p>
 
-<div class="en">
-<p>You can contact us for quotations and cooperation requests.</p>
+      <p>
+        E-Mail:
+        <a href="mailto:sales@pstmetal.com.tr">
+          sales@pstmetal.com.tr
+        </a>
+      </p>
 
-<p>
-E-Mail:
-<a href="mailto:sales@pstmetal.com.tr">
-sales@pstmetal.com.tr
-</a>
-</p>
+      <p>
+        WhatsApp:
+        <a href="https://wa.me/905346634749">
+          İletişime Geç
+        </a>
+      </p>
 
-<p>
-WhatsApp:
-<a href="https://wa.me/905346634749">
-Contact Now
-</a>
-</p>
-</div>
+    </div>
 
-</div>
+    <div class="en">
+
+      <p>
+        You can contact us for quotations and cooperation requests.
+      </p>
+
+      <p>
+        E-Mail:
+        <a href="mailto:sales@pstmetal.com.tr">
+          sales@pstmetal.com.tr
+        </a>
+      </p>
+
+      <p>
+        WhatsApp:
+        <a href="https://wa.me/905346634749">
+          Contact Now
+        </a>
+      </p>
+
+    </div>
+
+  </div>
 
 </section>
 
-<!-- FOOTER -->
-
 <footer>
 
-<div class="tr">
-© 2026 PST Metal. Tüm hakları saklıdır.
-</div>
+  <div class="tr">
+    © 2026 PST Metal. Tüm hakları saklıdır.
+  </div>
 
-<div class="en">
-© 2026 PST Metal. All rights reserved.
-</div>
+  <div class="en">
+    © 2026 PST Metal. All rights reserved.
+  </div>
 
 </footer>
 
@@ -528,34 +497,34 @@ Contact Now
 
 function setLang(lang){
 
-const trElements=document.querySelectorAll('.tr');
-const enElements=document.querySelectorAll('.en');
+  const trElements=document.querySelectorAll('.tr');
+  const enElements=document.querySelectorAll('.en');
 
-if(lang==="tr"){
+  if(lang==="tr"){
 
-trElements.forEach(el=>{
-el.style.display="block";
-});
+    trElements.forEach(el=>{
+      el.style.display="block";
+    });
 
-enElements.forEach(el=>{
-el.style.display="none";
-});
+    enElements.forEach(el=>{
+      el.style.display="none";
+    });
 
-document.documentElement.lang="tr";
+    document.documentElement.lang="tr";
 
-}else{
+  }else{
 
-trElements.forEach(el=>{
-el.style.display="none";
-});
+    trElements.forEach(el=>{
+      el.style.display="none";
+    });
 
-enElements.forEach(el=>{
-el.style.display="block";
-});
+    enElements.forEach(el=>{
+      el.style.display="block";
+    });
 
-document.documentElement.lang="en";
+    document.documentElement.lang="en";
 
-}
+  }
 
 }
 
