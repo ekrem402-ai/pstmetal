@@ -1,287 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PST Metal | HVAC & Metal Fabrication</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PST Metal | Alüminyum Radyatör, Havlupan ve Metal Çözümleri</title>
+  <meta name="description" content="PST Metal; alüminyum radyatör, havlupan, metal komponent ve ihracat odaklı üretim çözümleri sunar. Proje, toptan satış ve OEM tedarik için teklif alın." />
+  <meta name="keywords" content="alüminyum radyatör, havlupan, metal üretim, dekoratif radyatör, ihracat, PST Metal" />
+  <meta property="og:title" content="PST Metal | Alüminyum Radyatör & Metal Çözümleri" />
+  <meta property="og:description" content="Tasarım odaklı alüminyum radyatör ve havlupan çözümleri. B2B, proje ve ihracat için güvenilir tedarik." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pstmetal.com.tr/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #222;
-      background: #f7f7f7;
-    }
-
-    header {
-      background: #111;
-      color: white;
-      padding: 25px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    .lang button {
-      background: white;
-      border: none;
-      padding: 8px 14px;
-      margin-left: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-      url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122") center/cover;
-      color: white;
-      padding: 100px 8%;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    section {
-      padding: 60px 8%;
-      background: white;
-      margin-bottom: 12px;
-    }
-
-    h2 {
-      font-size: 30px;
-      margin-bottom: 20px;
-      color: #111;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: #f2f2f2;
-      padding: 25px;
-      border-radius: 10px;
-      border-left: 5px solid #111;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 25px;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
-      text-align: center;
-    }
-
-    th {
-      background: #111;
-      color: white;
-    }
-
-    .contact {
-      background: #111;
-      color: white;
-    }
-
-    .contact h2 {
-      color: white;
-    }
-
-    .contact a {
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    footer {
-      background: #000;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .en {
-      display: none;
-    }
+    :root{--bg:#071018;--panel:#0f1b27;--panel2:#132233;--text:#eef5fb;--muted:#9baabc;--line:#213245;--brand:#f58220;--brand2:#ffb15a;--white:#fff;--dark:#050a0f;--ok:#47d18c}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}.container{max-width:1180px;margin:0 auto;padding:0 20px}.topbar{background:#03070b;color:#b8c4d1;font-size:13px;border-bottom:1px solid var(--line)}.topbar .container{display:flex;justify-content:space-between;gap:20px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}header{position:sticky;top:0;z-index:20;background:rgba(7,16,24,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:24px;letter-spacing:.5px}.mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;color:#06111b;font-weight:900}.logo span{color:var(--brand)}.menu{display:flex;align-items:center;gap:18px;color:#c9d3df;font-size:14px}.menu a:hover{color:var(--brand2)}.lang{display:flex;border:1px solid #38506a;border-radius:999px;overflow:hidden}.lang button{background:transparent;color:#c9d3df;border:0;padding:7px 10px;font-weight:800;cursor:pointer}.lang button.active{background:var(--brand);color:#06111b}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:12px;font-weight:700;border:1px solid transparent;transition:.2s ease;cursor:pointer}.btn.primary{background:var(--brand);color:#08111a}.btn.primary:hover{background:var(--brand2);transform:translateY(-1px)}.btn.secondary{background:transparent;border-color:#38506a;color:var(--text)}.btn.secondary:hover{border-color:var(--brand);color:var(--brand2)}.hero{position:relative;overflow:hidden;padding:86px 0 64px;border-bottom:1px solid var(--line);background:radial-gradient(1000px 450px at 85% 5%,rgba(245,130,32,.18),transparent 60%),linear-gradient(135deg,#08131d,#102131)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#ffd0a6;background:rgba(245,130,32,.12);border:1px solid rgba(245,130,32,.28);border-radius:999px;padding:8px 12px;font-size:13px;font-weight:700;margin-bottom:18px}h1{font-size:52px;line-height:1.06;margin:0 0 18px;letter-spacing:-1.5px}.lead{font-size:18px;color:#c0ccda;max-width:700px;margin-bottom:26px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:16px;padding:16px}.stat strong{font-size:24px;color:var(--white);display:block}.stat span{font-size:13px;color:var(--muted)}.visual{background:linear-gradient(180deg,#142537,#0f1b27);border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:0 24px 60px rgba(0,0,0,.25)}.visual-main{height:330px;border-radius:18px;background:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80') center/cover;position:relative;overflow:hidden}.visual-main:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,16,24,.72),rgba(7,16,24,.12))}.visual-caption{display:flex;justify-content:space-between;gap:20px;margin-top:14px;color:#b9c6d4;font-size:13px}section{padding:72px 0;border-bottom:1px solid var(--line)}.section-head{max-width:760px;margin:0 auto 38px;text-align:center}.section-head h2{font-size:34px;line-height:1.16;margin:0 0 10px;letter-spacing:-.7px}.section-head p{color:var(--muted);margin:0}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 14px 38px rgba(0,0,0,.16)}.card h3{margin:0 0 10px;font-size:19px}.card p{color:var(--muted);margin:0}.icon{width:42px;height:42px;border-radius:12px;background:rgba(245,130,32,.14);color:var(--brand2);display:grid;place-items:center;font-weight:900;margin-bottom:14px}.product{padding:0;overflow:hidden}.product-img{height:225px;position:relative;background:#101820;overflow:hidden}.product-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.04)}.product-img:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(7,16,24,.48))}.product-body{padding:22px}.tag{display:inline-block;background:rgba(245,130,32,.13);color:#ffc18b;border:1px solid rgba(245,130,32,.26);padding:5px 9px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:10px}.features .card{min-height:165px}.table{overflow:auto;border-radius:18px;border:1px solid var(--line);background:var(--panel)}table{width:100%;min-width:760px;border-collapse:collapse}th,td{text-align:left;padding:15px 16px;border-bottom:1px solid var(--line)}th{background:#111f2e;color:#fff}td{color:#bac7d5}tr:last-child td{border-bottom:0}.note{margin-top:14px;color:#8d9aaa;font-size:13px}.process{counter-reset:step}.step{position:relative;padding-left:58px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:22px;width:38px;height:38px;border-radius:50%;background:var(--brand);color:#06111b;display:grid;place-items:center;font-weight:900}.contact-card{background:linear-gradient(135deg,#132437,#0d1824)}label{display:block;font-weight:700;margin:0 0 7px;font-size:13px;color:#dbe5ef}input,textarea,select{width:100%;padding:13px 14px;background:#08131d;border:1px solid #2a3e55;border-radius:12px;color:var(--text);font:inherit;margin-bottom:14px}textarea{min-height:128px;resize:vertical}input:focus,textarea:focus,select:focus{outline:1px solid var(--brand);border-color:var(--brand)}.contact-info p{margin-bottom:12px}.whatsapp{position:fixed;right:20px;bottom:20px;z-index:30;background:#25d366;color:#06111b;border-radius:999px;padding:14px 18px;font-weight:900;box-shadow:0 14px 30px rgba(0,0,0,.35)}footer{background:#03070b;padding:36px 0;color:#9fabb9}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:24px}.footer-grid h4{color:#fff;margin:0 0 10px}.small{font-size:13px;color:#8d9aaa;margin-top:24px;border-top:1px solid var(--line);padding-top:18px}.en{display:none}body[data-lang="en"] .tr{display:none}body[data-lang="en"] .en{display:initial}body[data-lang="en"] div.en,body[data-lang="en"] section.en,body[data-lang="en"] p.en,body[data-lang="en"] h1.en,body[data-lang="en"] h2.en,body[data-lang="en"] h3.en,body[data-lang="en"] span.en,body[data-lang="en"] a.en,body[data-lang="en"] label.en,body[data-lang="en"] option.en{display:block}body[data-lang="en"] a.en,body[data-lang="en"] span.en{display:inline-flex}@media(max-width:940px){.menu{display:none}.hero-grid,.grid-2,.grid-3,.grid-4,.footer-grid{grid-template-columns:1fr}h1{font-size:38px}.hero{padding:60px 0}.stats{grid-template-columns:1fr}.visual-main{height:260px}}
   </style>
 </head>
-<body>
-
-<header>
-  <div class="logo">PST METAL</div>
-  <div class="lang">
-    <button onclick="setLang('tr')">TR</button>
-    <button onclick="setLang('en')">EN</button>
-  </div>
-</header>
-
-<div class="hero">
-  <div class="tr">
-    <h1>Metal İmalat ve HVAC Çözümleri</h1>
-    <p>Isıtma, soğutma ve metal fabrikasyon alanlarında ihracata yönelik profesyonel üretim çözümleri.</p>
-  </div>
-
-  <div class="en">
-    <h1>Metal Fabrication & HVAC Solutions</h1>
-    <p>Professional export-oriented manufacturing solutions for heating, cooling and metal fabrication industries.</p>
-  </div>
-</div>
-
-<section>
-  <div class="tr">
-    <h2>Hakkımızda</h2>
-    <p>
-      PST Metal; metal işleme, sac şekillendirme, kaynaklı imalat, klima montaj ekipmanları,
-      bağlantı parçaları ve HVAC sektörüne yönelik özel üretim çözümleri sunar.
-      Kaliteli üretim, rekabetçi fiyat ve ihracata uygun paketleme anlayışıyla çalışır.
-    </p>
-  </div>
-
-  <div class="en">
-    <h2>About Us</h2>
-    <p>
-      PST Metal provides metal processing, sheet metal forming, welded fabrication,
-      air conditioner mounting equipment, connection parts and custom manufacturing
-      solutions for the HVAC industry. We focus on quality production, competitive pricing
-      and export-ready packaging.
-    </p>
-  </div>
-</section>
-
-<section>
-  <div class="tr">
-    <h2>Ürün ve Hizmetler</h2>
-    <div class="grid">
-      <div class="card">Klima Dış Ünite Montaj Ayakları</div>
-      <div class="card">Sac Metal Parçalar</div>
-      <div class="card">Kaynaklı Metal İmalat</div>
-      <div class="card">Özel Proje Üretimleri</div>
-      <div class="card">HVAC Bağlantı Elemanları</div>
-      <div class="card">İhracata Uygun Paketleme</div>
-    </div>
-  </div>
-
-  <div class="en">
-    <h2>Products & Services</h2>
-    <div class="grid">
-      <div class="card">Air Conditioner Outdoor Unit Brackets</div>
-      <div class="card">Sheet Metal Components</div>
-      <div class="card">Welded Metal Fabrication</div>
-      <div class="card">Custom Project Manufacturing</div>
-      <div class="card">HVAC Connection Parts</div>
-      <div class="card">Export-Ready Packaging</div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="tr">
-    <h2>Teknik Tablo - ΔT50</h2>
-    <table>
-      <tr>
-        <th>Ürün Grubu</th>
-        <th>Malzeme</th>
-        <th>Kullanım Alanı</th>
-        <th>Üretim Tipi</th>
-      </tr>
-      <tr>
-        <td>Klima Montaj Ayağı</td>
-        <td>Galvaniz / DKP Sac</td>
-        <td>HVAC</td>
-        <td>Seri Üretim</td>
-      </tr>
-      <tr>
-        <td>Metal Bağlantı Parçaları</td>
-        <td>Çelik / Alüminyum</td>
-        <td>Endüstriyel</td>
-        <td>Özel Üretim</td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="en">
-    <h2>Technical Table - ΔT50</h2>
-    <table>
-      <tr>
-        <th>Product Group</th>
-        <th>Material</th>
-        <th>Application</th>
-        <th>Production Type</th>
-      </tr>
-      <tr>
-        <td>AC Mounting Bracket</td>
-        <td>Galvanized / Mild Steel Sheet</td>
-        <td>HVAC</td>
-        <td>Mass Production</td>
-      </tr>
-      <tr>
-        <td>Metal Connection Parts</td>
-        <td>Steel / Aluminium</td>
-        <td>Industrial</td>
-        <td>Custom Production</td>
-      </tr>
-    </table>
-  </div>
-</section>
-
-<section class="contact">
-  <div class="tr">
-    <h2>İletişim</h2>
-    <p>Teklif ve iş birliği talepleriniz için bizimle iletişime geçebilirsiniz.</p>
-    <p>E-posta: <a href="mailto:sales@pstmetal.com.tr">sales@pstmetal.com.tr</a></p>
-    <p>WhatsApp: <a href="https://wa.me/905346634749">WhatsApp ile iletişime geç</a></p>
-  </div>
-
-  <div class="en">
-    <h2>Contact</h2>
-    <p>You can contact us for quotation and cooperation requests.</p>
-    <p>Email: <a href="mailto:sales@pstmetal.com.tr">sales@pstmetal.com.tr</a></p>
-    <p>WhatsApp: <a href="https://wa.me/905346634749">Contact via WhatsApp</a></p>
-  </div>
-</section>
-
-<footer>
-  <div class="tr">© 2026 PST Metal. Tüm hakları saklıdır.</div>
-  <div class="en">© 2026 PST Metal. All rights reserved.</div>
-</footer>
-
-<script>
-  function setLang(lang) {
-    const trElements = document.querySelectorAll('.tr');
-    const enElements = document.querySelectorAll('.en');
-
-    if (lang === 'tr') {
-      trElements.forEach(el => el.style.display = 'block');
-      enElements.forEach(el => el.style.display = 'none');
-      document.documentElement.lang = 'tr';
-    } else {
-      trElements.forEach(el => el.style.display = 'none');
-      enElements.forEach(el => el.style.display = 'block');
-      document.documentElement.lang = 'en';
-    }
-  }
-
-  setLang('tr');
-</script>
-
+<body data-lang="tr">
+  <div class="topbar"><div class="container"><div><span class="tr">Üretim ve ihracat odaklı tedarik</span><span class="en">Production and export-oriented supply</span></div><div>E-posta / Email: <a href="mailto:sales@pstmetal.com.tr">sales@pstmetal.com.tr</a></div></div></div>
+  <header><div class="container"><nav><a class="logo" href="#"><div class="mark">P</div><div>PST <span>METAL</span></div></a><div class="menu"><a href="#urunler"><span class="tr">Ürünler</span><span class="en">Products</span></a><a href="#avantajlar"><span class="tr">Avantajlar</span><span class="en">Advantages</span></a><a href="#teknik"><span class="tr">Teknik</span><span class="en">Technical</span></a><a href="#ihracat"><span class="tr">İhracat</span><span class="en">Export</span></a><a href="#iletisim"><span class="tr">İletişim</span><span class="en">Contact</span></a><div class="lang"><button type="button" id="trBtn" class="active" onclick="setLang('tr')">TR</button><button type="button" id="enBtn" onclick="setLang('en')">EN</button></div><a class="btn primary" href="#teklif"><span class="tr">Teklif Al</span><span class="en">Get Quote</span></a></div></nav></div></header>
+  <main>
+    <section class="hero"><div class="container hero-grid"><div><div class="eyebrow"><span class="tr">Alüminyum Radyatör · Havlupan · Metal Komponent</span><span class="en">Aluminium Radiators · Towel Warmers · Metal Components</span></div><h1 class="tr">Tasarım, performans ve ihracat disiplini tek çatı altında.</h1><h1 class="en">Design, performance and export discipline under one roof.</h1><p class="lead tr">PST Metal; modern alüminyum radyatör, havlupan ve özel metal üretim çözümlerinde proje firmaları, toptancılar, distribütörler ve OEM müşteriler için profesyonel tedarik partneridir.</p><p class="lead en">PST Metal is a professional supply partner for project companies, wholesalers, distributors and OEM customers in modern aluminium radiators, towel warmers and custom metal production solutions.</p><div class="hero-actions"><a class="btn primary" href="#teklif"><span class="tr">Hızlı Teklif Talebi</span><span class="en">Quick Quote Request</span></a><a class="btn secondary" href="#urunler"><span class="tr">Ürün Grupları</span><span class="en">Product Groups</span></a></div><div class="stats"><div class="stat"><strong>EN 442</strong><span class="tr">Isıl performans yaklaşımı</span><span class="en">Thermal performance approach</span></div><div class="stat"><strong>B2B</strong><span class="tr">Toptan ve proje tedariki</span><span class="en">Wholesale & project supply</span></div><div class="stat"><strong>OEM</strong><span class="tr">Markalı / özel üretim</span><span class="en">Private label production</span></div></div></div><div class="visual"><div class="visual-main" aria-label="Modern interior heating visual"></div><div class="visual-caption"><span class="tr">Dekoratif yüzeyler</span><span class="en">Decorative finishes</span><span class="tr">Yüksek ısıl verim</span><span class="en">High thermal efficiency</span><span class="tr">Düşük su hacmi</span><span class="en">Low water content</span></div></div></div></section>
+    <section id="urunler"><div class="container"><div class="section-head"><h2 class="tr">Ürün Grupları</h2><h2 class="en">Product Groups</h2><p class="tr">Konut, otel, proje ve toptan satış kanalları için modern ısıtma ve metal çözümleri.</p><p class="en">Modern heating and metal solutions for residential, hotel, project and wholesale channels.</p></div><div class="grid-3">
+      <article class="card product"><div class="product-img"><img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=80" alt="Modern interior radiator"></div><div class="product-body"><span class="tag tr">Radyatör</span><span class="tag en">Radiator</span><h3 class="tr">Dikey Alüminyum Radyatörler</h3><h3 class="en">Vertical Aluminium Radiators</h3><p class="tr">Dar alanlarda yüksek ısı çıkışı, modern form ve çoklu renk seçeneği.</p><p class="en">High heat output in narrow spaces with modern forms and multiple finish options.</p></div></article>
+      <article class="card product"><div class="product-img"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=80" alt="Modern bathroom towel warmer concept"></div><div class="product-body"><span class="tag tr">Banyo</span><span class="tag en">Bathroom</span><h3 class="tr">Alüminyum Havlupanlar</h3><h3 class="en">Aluminium Towel Warmers</h3><p class="tr">Banyo, spa ve otel projeleri için dekoratif ve fonksiyonel çözümler.</p><p class="en">Decorative and functional heating solutions for bathrooms, spas and hotels.</p></div></article>
+      <article class="card product"><div class="product-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Modern home heating product"></div><div class="product-body"><span class="tag tr">Elektrikli</span><span class="tag en">Electric</span><h3 class="tr">Elektrikli Isıtıcı Modeller</h3><h3 class="en">Electric Heating Models</h3><p class="tr">Bağımsız kullanım, kolay kurulum ve hızlı devreye alma avantajı.</p><p class="en">Independent operation, easy installation and fast commissioning.</p></div></article>
+      <article class="card product"><div class="product-img"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80" alt="Metal production"></div><div class="product-body"><span class="tag tr">Özel Üretim</span><span class="tag en">Custom</span><h3 class="tr">Private Label / OEM</h3><h3 class="en">Private Label / OEM</h3><p class="tr">Distribütör ve markalar için ürün, paketleme ve etiket uyarlamaları.</p><p class="en">Product, packaging and labelling adaptations for distributors and brands.</p></div></article>
+      <article class="card product"><div class="product-img"><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=900&q=80" alt="Metal components"></div><div class="product-body"><span class="tag tr">Komponent</span><span class="tag en">Component</span><h3 class="tr">Metal Parça ve Aksesuar</h3><h3 class="en">Metal Parts & Accessories</h3><p class="tr">HVAC ve endüstriyel uygulamalar için metal komponent üretimi.</p><p class="en">Metal component production for HVAC and industrial applications.</p></div></article>
+      <article class="card product"><div class="product-img"><img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=80" alt="Project supply"></div><div class="product-body"><span class="tag tr">Proje</span><span class="tag en">Project</span><h3 class="tr">Proje Bazlı Tedarik</h3><h3 class="en">Project-Based Supply</h3><p class="tr">Ölçü, renk, miktar ve teslim planına göre yapılandırılmış tedarik.</p><p class="en">Supply structured by size, finish, quantity and delivery schedule.</p></div></article>
+    </div></div></section>
+    <section id="avantajlar" class="features"><div class="container"><div class="section-head"><h2 class="tr">Neden Alüminyum?</h2><h2 class="en">Why Aluminium?</h2><p class="tr">Alüminyum radyatörler; hafiflik, hızlı ısı transferi ve uzun ömürlü kullanım avantajlarını bir araya getirir.</p><p class="en">Aluminium radiators combine lightweight construction, fast heat transfer and long service life.</p></div><div class="grid-4"><div class="card"><div class="icon">01</div><h3 class="tr">Hafif yapı</h3><h3 class="en">Lightweight</h3><p class="tr">Taşıma, montaj ve lojistik süreçlerinde avantaj sağlar.</p><p class="en">Advantages in transport, installation and logistics.</p></div><div class="card"><div class="icon">02</div><h3 class="tr">Hızlı ısınma</h3><h3 class="en">Fast heat-up</h3><p class="tr">Düşük su hacmi sayesinde sistem tepkisi daha hızlıdır.</p><p class="en">Low water content supports faster system response.</p></div><div class="card"><div class="icon">03</div><h3 class="tr">Korozyon direnci</h3><h3 class="en">Corrosion resistance</h3><p class="tr">Uygun yüzey işlem ve kullanım koşullarında uzun ömür sunar.</p><p class="en">Long service life with suitable surface treatment and operating conditions.</p></div><div class="card"><div class="icon">04</div><h3 class="tr">Dekoratif yüzey</h3><h3 class="en">Decorative finish</h3><p class="tr">Mat, parlak, metalik ve özel RAL renkleriyle iç mimariye uyum sağlar.</p><p class="en">Matt, gloss, metallic and custom RAL options for interior design.</p></div></div></div></section>
+    <section id="teknik"><div class="container"><div class="section-head"><h2 class="tr">ΔT50 Teknik Tablo</h2><h2 class="en">ΔT50 Technical Table</h2><p class="tr">Aşağıdaki tablo ön seçim ve teklif hazırlığı için örnek referans değerlerdir. Nihai değerler model, ölçü, yüzey ve test raporuna göre netleşir.</p><p class="en">The table below provides indicative reference values for preliminary selection and quotations. Final values depend on model, size, finish and test data.</p></div><div class="table"><table><thead><tr><th class="tr">Ürün Tipi</th><th class="en">Product Type</th><th class="tr">Örnek Ölçü</th><th class="en">Sample Size</th><th>ΔT50</th><th class="tr">Su Hacmi</th><th class="en">Water Content</th><th class="tr">Bağlantı</th><th class="en">Connection</th><th class="tr">Kullanım Alanı</th><th class="en">Application</th></tr></thead><tbody><tr><td class="tr">Dikey Alüminyum Radyatör</td><td class="en">Vertical Aluminium Radiator</td><td>1800 × 450 mm</td><td class="tr">850–1200 W</td><td class="en">850–1200 W</td><td>4–7 L</td><td class="tr">Alt / yan bağlantı</td><td class="en">Bottom / side</td><td class="tr">Salon, antre, proje</td><td class="en">Living room, hallway, projects</td></tr><tr><td class="tr">Yatay Alüminyum Radyatör</td><td class="en">Horizontal Aluminium Radiator</td><td>600 × 1000 mm</td><td>700–1100 W</td><td>5–8 L</td><td class="tr">Yan bağlantı</td><td class="en">Side connection</td><td class="tr">Konut ve ofis</td><td class="en">Residential & office</td></tr><tr><td class="tr">Alüminyum Havlupan</td><td class="en">Aluminium Towel Warmer</td><td>1200 × 500 mm</td><td>450–750 W</td><td>3–5 L</td><td class="tr">Alt bağlantı</td><td class="en">Bottom connection</td><td class="tr">Banyo, otel, spa</td><td class="en">Bathroom, hotel, spa</td></tr><tr><td class="tr">Elektrikli Model</td><td class="en">Electric Model</td><td>1200 × 500 mm</td><td>300–800 W</td><td class="tr">Sıvı / kuru tip</td><td class="en">Fluid / dry type</td><td class="tr">Elektrik besleme</td><td class="en">Power supply</td><td class="tr">Bağımsız ısıtma</td><td class="en">Independent heating</td></tr></tbody></table></div><p class="note tr">Not: ΔT50; 75/65/20°C çalışma şartları için kullanılan yaygın referanstır. Proje hesabında mahal ısı kaybı, izolasyon, cam alanı ve iklim bölgesi dikkate alınmalıdır.</p><p class="note en">Note: ΔT50 is a common reference based on 75/65/20°C operating conditions. Project calculation should consider room heat loss, insulation, glazing area and climate region.</p></div></section>
+    <section id="ihracat"><div class="container"><div class="section-head"><h2 class="tr">İhracat ve B2B Tedarik</h2><h2 class="en">Export & B2B Supply</h2><p class="tr">Distribütörler, proje firmaları ve toptancılar için ticari olarak ölçeklenebilir iş modeli.</p><p class="en">A scalable commercial model for distributors, project companies and wholesalers.</p></div><div class="grid-3 process"><div class="card step"><h3 class="tr">Talep Analizi</h3><h3 class="en">Request Analysis</h3><p class="tr">Model, ölçü, adet, renk, teslim yeri ve hedef pazar bilgisi alınır.</p><p class="en">Model, size, quantity, finish, delivery point and target market details are reviewed.</p></div><div class="card step"><h3 class="tr">Teklif ve Planlama</h3><h3 class="en">Quotation & Planning</h3><p class="tr">Fiyat, üretim süresi, paketleme ve sevkiyat planı netleştirilir.</p><p class="en">Price, production lead time, packaging and shipment plan are confirmed.</p></div><div class="card step"><h3 class="tr">Üretim ve Sevkiyat</h3><h3 class="en">Production & Shipment</h3><p class="tr">Kalite kontrol, paketleme, yükleme ve evrak süreci tamamlanır.</p><p class="en">Quality control, packaging, loading and documentation are completed.</p></div></div></div></section>
+    <section id="teklif"><div class="container"><div class="section-head"><h2 class="tr">Hızlı Teklif Alın</h2><h2 class="en">Request a Quick Quote</h2><p class="tr">Ürün grubu, ölçü, adet ve teslim ülkesini paylaşın; size uygun ticari teklif hazırlayalım.</p><p class="en">Share product group, size, quantity and delivery country; we will prepare a commercial proposal.</p></div><div class="grid-2"><div class="card contact-card"><form onsubmit="return sendWhatsApp(event)"><label><span class="tr">Ad Soyad</span><span class="en">Full Name</span></label><input id="ad" required placeholder="Adınız ve soyadınız / Full name"><label><span class="tr">Firma</span><span class="en">Company</span></label><input id="firma" placeholder="Firma adınız / Company name"><label>E-posta / Email</label><input id="email" type="email" required placeholder="ornek@firma.com"><label><span class="tr">Telefon</span><span class="en">Phone</span></label><input id="telefon" placeholder="+90 ..."><label><span class="tr">Ürün Grubu</span><span class="en">Product Group</span></label><select id="urun"><option>Alüminyum radyatör / Aluminium radiator</option><option>Havlupan / Towel warmer</option><option>Elektrikli model / Electric model</option><option>Metal komponent / Metal component</option><option>OEM / private label</option></select><label><span class="tr">Talep Detayı</span><span class="en">Request Details</span></label><textarea id="mesaj" placeholder="Model, ölçü, adet, renk, teslim yeri vb. / Model, size, quantity, finish, delivery point etc."></textarea><button class="btn primary" type="submit"><span class="tr">WhatsApp ile Teklif Talebi Gönder</span><span class="en">Send Quote Request via WhatsApp</span></button></form></div><div class="card contact-info" id="iletisim"><h3 class="tr">İletişim</h3><h3 class="en">Contact</h3><p><strong>E-posta / Email:</strong> <a href="mailto:sales@pstmetal.com.tr">sales@pstmetal.com.tr</a></p><p><strong>Web:</strong> www.pstmetal.com.tr</p><p>
+<strong class="tr">Konum:</strong><strong class="en">Location:</strong> Türkiye
+</p><p><strong class="tr">Çalışma alanı:</strong><strong class="en">Markets:</strong> Türkiye, Avrupa, Orta Doğu ve Afrika</p><p class="tr">Teklif talebinizde ürün tipi, ölçü, adet, renk, bağlantı tipi ve teslim ülkesini belirtmeniz süreci hızlandırır.</p><p class="en">Please include product type, size, quantity, finish, connection type and delivery country for a faster quotation.</p><a class="btn secondary" href="mailto:sales@pstmetal.com.tr?subject=PST%20Metal%20Teklif%20Talebi">E-posta / Email</a></div></div></div></section>
+  </main>
+  <a class="whatsapp" href="https://wa.me/905346634749" target="_blank" rel="noopener">WhatsApp</a>
+  <footer><div class="container footer-grid"><div><h4>PST Metal</h4><p class="tr">Alüminyum radyatör, havlupan, metal komponent ve ihracat odaklı B2B tedarik çözümleri.</p><p class="en">Aluminium radiators, towel warmers, metal components and export-oriented B2B supply solutions.</p></div><div><h4 class="tr">Ürünler</h4><h4 class="en">Products</h4><p>Dikey radyatör / Vertical radiator<br>Havlupan / Towel warmer<br>Elektrikli modeller / Electric models<br>OEM solutions</p></div><div><h4 class="tr">İletişim</h4><h4 class="en">Contact</h4><p><a href="mailto:sales@pstmetal.com.tr">sales@pstmetal.com.tr</a><br> Türkiye</p></div></div><div class="container small">© <span id="year"></span> PST Metal. <span class="tr">Tüm hakları saklıdır.</span><span class="en">All rights reserved.</span></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function setLang(lang){document.body.setAttribute('data-lang',lang);document.documentElement.lang=lang;document.getElementById('trBtn').classList.toggle('active',lang==='tr');document.getElementById('enBtn').classList.toggle('active',lang==='en');}
+    function sendWhatsApp(e){e.preventDefault();const v=id=>encodeURIComponent(document.getElementById(id).value||'');const text=`PST Metal Teklif Talebi%0AAd Soyad: ${v('ad')}%0AFirma: ${v('firma')}%0AE-posta: ${v('email')}%0ATelefon: ${v('telefon')}%0AÜrün Grubu: ${v('urun')}%0ATalep: ${v('mesaj')}`;const phone='905346634749';window.open(`https://wa.me/${phone}?text=${text}`,'_blank');return false;}
+  </script>
 </body>
 </html>
